@@ -1,0 +1,59 @@
+php artisan make:filament-resource Vendor --soft-deletes --generate
+
+php artisan make:filament-page ViewVendor --resource=VendorResource --type=ViewRecord
+
+php artisan make:filament-page SendNotification
+
+php artisan make:filament-relation-manager VendorResource bankAccounts iban
+
+php artisan make:filament-has-many VendorResource bankAccounts iban --force --soft-deletes
+
+php artisan make:filament-has-many VendorResource categories name_ar
+
+php artisan make:filament-has-many VendorResource menus name_ar
+
+php artisan make:filament-has-many ProductResource menus name_ar
+
+php artisan make:filament-has-many ProductResource categories name_ar
+
+php artisan make:filament-resource Vendor
+
+php artisan make:filament-resource OptionGroup
+
+php artisan make:filament-resource Options --generate
+
+php artisan make:filament-relation-manager CategoryResource  vendors name_ar
+
+php artisan make:filament-relation-manager ProductResource  optionGroups name_ar
+
+php artisan make:filament-relation-manager OptionGroup  options name_ar
+
+php artisan make:filament-resource SystemEarningTransaction --generate
+
+php artisan make:filament-resource Offer --generate
+
+php artisan make:filament-widget VendorSummaryOverview --resource=Vendor
+
+php artisan make:filament-widget PayoutDetails --resource=PayoutResource
+
+php artisan make:filament-widget UpdateProductApprovalStatus --resource=Product
+
+php artisan make:filament-relation-manager VendorResource products name_ar
+
+php artisan make:filament-relation-manager VendorResource orders number
+
+php artisan make:filament-relation-manager VendorResource managers name_ar
+
+php artisan make:filament-resource User --soft-deletes --generate
+
+php artisan make:filament-resource User --soft-deletes --generate
+
+php artisan make:filament-relation-manager VendorResource ratings rating
+
+php artisan make:filament-resource Order --soft-deletes --generate
+
+php artisan make:filament-resource TechnicalSupport --soft-deletes --generate
+
+php artisan make:filament-page Reports
+
+php artisan make:filament-resource Payout --generate

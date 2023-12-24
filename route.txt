@@ -1,0 +1,174 @@
+
+  GET|HEAD        / ..................................................................................................................................................................................... 
+  POST            _ignition/execute-solution .............................................................................. ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController
+  GET|HEAD        _ignition/health-check .......................................................................................... ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
+  POST            _ignition/update-config ....................................................................................... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
+  GET|HEAD        admin ......................................................................................................................... filament.pages.dashboard › App\Filament\Pages\Dashboard
+  GET|HEAD        admin/about ........................................................................................................................... filament.pages.about › App\Filament\Pages\About
+  GET|HEAD        admin/app-users ........................................................................ filament.resources.app-users.index › App\Filament\Resources\AppUserResource\Pages\ListAppUsers
+  GET|HEAD        admin/app-users/create ............................................................... filament.resources.app-users.create › App\Filament\Resources\AppUserResource\Pages\CreateAppUser
+  GET|HEAD        admin/app-users/{record}/edit ............................................................ filament.resources.app-users.edit › App\Filament\Resources\AppUserResource\Pages\EditAppUser
+  GET|HEAD        admin/categories ................................................................... filament.resources.categories.index › App\Filament\Resources\CategoryResource\Pages\ListCategories
+  GET|HEAD        admin/categories/create ........................................................... filament.resources.categories.create › App\Filament\Resources\CategoryResource\Pages\CreateCategory
+  GET|HEAD        admin/categories/{record}/edit ........................................................ filament.resources.categories.edit › App\Filament\Resources\CategoryResource\Pages\EditCategory
+  GET|HEAD        admin/login ....................................................................................................................... filament.auth.login › App\Filament\Pages\Auth\Login
+  GET|HEAD        admin/option-groups ........................................................ filament.resources.option-groups.index › App\Filament\Resources\OptionGroupResource\Pages\ListOptionGroups
+  GET|HEAD        admin/option-groups/create ............................................... filament.resources.option-groups.create › App\Filament\Resources\OptionGroupResource\Pages\CreateOptionGroup
+  GET|HEAD        admin/option-groups/{record}/edit ............................................ filament.resources.option-groups.edit › App\Filament\Resources\OptionGroupResource\Pages\EditOptionGroup
+  GET|HEAD        admin/orders .................................................................................. filament.resources.orders.index › App\Filament\Resources\OrderResource\Pages\ListOrders
+  GET|HEAD        admin/orders/create ......................................................................... filament.resources.orders.create › App\Filament\Resources\OrderResource\Pages\CreateOrder
+  GET|HEAD        admin/orders/{record}/edit ...................................................................... filament.resources.orders.edit › App\Filament\Resources\OrderResource\Pages\EditOrder
+  GET|HEAD        admin/permissions .............................................................. filament.resources.permissions.index › App\Filament\Resources\PermissionResource\Pages\ListPermissions
+  GET|HEAD        admin/permissions/create ..................................................... filament.resources.permissions.create › App\Filament\Resources\PermissionResource\Pages\CreatePermission
+  GET|HEAD        admin/permissions/{record} ....................................................... filament.resources.permissions.view › App\Filament\Resources\PermissionResource\Pages\ViewPermission
+  GET|HEAD        admin/permissions/{record}/edit .................................................. filament.resources.permissions.edit › App\Filament\Resources\PermissionResource\Pages\EditPermission
+  GET|HEAD        admin/privacy-policy ................................................................................................. filament.pages.privacy-policy › App\Filament\Pages\PrivacyPolicy
+  GET|HEAD        admin/products .......................................................................... filament.resources.products.index › App\Filament\Resources\ProductResource\Pages\ListProducts
+  GET|HEAD        admin/products/create ................................................................. filament.resources.products.create › App\Filament\Resources\ProductResource\Pages\CreateProduct
+  GET|HEAD        admin/products/{record} ................................................................... filament.resources.products.view › App\Filament\Resources\ProductResource\Pages\ViewProduct
+  GET|HEAD        admin/products/{record}/edit .............................................................. filament.resources.products.edit › App\Filament\Resources\ProductResource\Pages\EditProduct
+  GET|HEAD        admin/reports ..................................................................................................................... filament.pages.reports › App\Filament\Pages\Reports
+  GET|HEAD        admin/roles ...................................................................................... filament.resources.roles.index › App\Filament\Resources\RoleResource\Pages\ListRoles
+  GET|HEAD        admin/roles/create ............................................................................. filament.resources.roles.create › App\Filament\Resources\RoleResource\Pages\CreateRole
+  GET|HEAD        admin/roles/{record} ............................................................................... filament.resources.roles.view › App\Filament\Resources\RoleResource\Pages\ViewRole
+  GET|HEAD        admin/roles/{record}/edit .......................................................................... filament.resources.roles.edit › App\Filament\Resources\RoleResource\Pages\EditRole
+  GET|HEAD        admin/send-notification ........................................................................................ filament.pages.send-notification › App\Filament\Pages\SendNotification
+  GET|HEAD        admin/technical-supports .................................... filament.resources.technical-supports.index › App\Filament\Resources\TechnicalSupportResource\Pages\ListTechnicalSupports
+  GET|HEAD        admin/technical-supports/create ........................... filament.resources.technical-supports.create › App\Filament\Resources\TechnicalSupportResource\Pages\CreateTechnicalSupport
+  GET|HEAD        admin/technical-supports/{record}/edit ........................ filament.resources.technical-supports.edit › App\Filament\Resources\TechnicalSupportResource\Pages\EditTechnicalSupport
+  GET|HEAD        admin/terms-and-conditions ................................................................................ filament.pages.terms-and-conditions › App\Filament\Pages\TermsAndConditions
+  GET|HEAD        admin/users ...................................................................................... filament.resources.users.index › App\Filament\Resources\UserResource\Pages\ListUsers
+  GET|HEAD        admin/users/create ............................................................................. filament.resources.users.create › App\Filament\Resources\UserResource\Pages\CreateUser
+  GET|HEAD        admin/users/{record}/edit .......................................................................... filament.resources.users.edit › App\Filament\Resources\UserResource\Pages\EditUser
+  GET|HEAD        admin/vendors .............................................................................. filament.resources.vendors.index › App\Filament\Resources\VendorResource\Pages\ListVendors
+  GET|HEAD        admin/vendors/create ..................................................................... filament.resources.vendors.create › App\Filament\Resources\VendorResource\Pages\CreateVendor
+  GET|HEAD        admin/vendors/{record} ....................................................................... filament.resources.vendors.view › App\Filament\Resources\VendorResource\Pages\ViewVendor
+  GET|HEAD        admin/vendors/{record}/edit .................................................................. filament.resources.vendors.edit › App\Filament\Resources\VendorResource\Pages\EditVendor
+  GET|HEAD        api/about ............................................................................................................................................................................. 
+  POST            api/add_review ......................................................................................................................................... API\ReviewController@addReview
+  GET|HEAD        api/bank_accounts ............................................................................................................... bank_accounts.index › API\BankAccountController@index
+  POST            api/bank_accounts ............................................................................................................... bank_accounts.store › API\BankAccountController@store
+  GET|HEAD        api/bank_accounts/{bank_account} .................................................................................................. bank_accounts.show › API\BankAccountController@show
+  PUT|PATCH       api/bank_accounts/{bank_account} .............................................................................................. bank_accounts.update › API\BankAccountController@update
+  DELETE          api/bank_accounts/{bank_account} ............................................................................................ bank_accounts.destroy › API\BankAccountController@destroy
+  POST            api/cart_info ...................................................................................................................................... API\CartInfoController@getCartInfo
+  GET|HEAD        api/categories ........................................................................................................................ categories.index › API\CategoryController@index
+  POST            api/categories ........................................................................................................................ categories.store › API\CategoryController@store
+  GET|HEAD        api/categories/{category} ............................................................................................................... categories.show › API\CategoryController@show
+  PUT|PATCH       api/categories/{category} ........................................................................................................... categories.update › API\CategoryController@update
+  DELETE          api/categories/{category} ......................................................................................................... categories.destroy › API\CategoryController@destroy
+  GET|HEAD        api/earnings .................................................................................................................................... API\VendorTransactionController@index
+  GET|HEAD        api/employees .......................................................................................................................... employees.index › API\EmployeeController@index
+  POST            api/employees .......................................................................................................................... employees.store › API\EmployeeController@store
+  GET|HEAD        api/employees/deleted .................................................................................................................................... API\EmployeeController@trash
+  GET|HEAD        api/employees/{employee} ................................................................................................................. employees.show › API\EmployeeController@show
+  PUT|PATCH       api/employees/{employee} ............................................................................................................. employees.update › API\EmployeeController@update
+  DELETE          api/employees/{employee} ........................................................................................................... employees.destroy › API\EmployeeController@destroy
+  PUT             api/employees/{id}/restore ............................................................................................................................. API\EmployeeController@restore
+  GET|HEAD        api/favorites ............................................................................................................................................ API\FavoriteController@index
+  POST            api/favorites ................................................................................................................................... API\FavoriteController@toggleFavorite
+  GET|HEAD        api/logout .................................................................................................................................................. API\AuthController@logout
+  GET|HEAD        api/menus ...................................................................................................................................... menus.index › API\MenuController@index
+  POST            api/menus ...................................................................................................................................... menus.store › API\MenuController@store
+  GET|HEAD        api/menus/deleted ............................................................................................................................................ API\MenuController@trash
+  PUT             api/menus/{id}/restore ..................................................................................................................................... API\MenuController@restore
+  GET|HEAD        api/menus/{menu} ................................................................................................................................. menus.show › API\MenuController@show
+  PUT|PATCH       api/menus/{menu} ............................................................................................................................. menus.update › API\MenuController@update
+  DELETE          api/menus/{menu} ........................................................................................................................... menus.destroy › API\MenuController@destroy
+  DELETE          api/my/profile ........................................................................................................................................................................ 
+  GET|HEAD        api/my/profile ........................................................................................................................................ API\AppUserController@myProfile
+  POST            api/my/profile .................................................................................................................................. API\AppUserController@updateMyProfile
+  GET|HEAD        api/my/transactions .............................................................................................................................. API\AppUserController@myTransactions
+  GET|HEAD        api/option_groups ............................................................................................................... option_groups.index › API\OptionGroupController@index
+  POST            api/option_groups ............................................................................................................... option_groups.store › API\OptionGroupController@store
+  GET|HEAD        api/option_groups/deleted ............................................................................................................................. API\OptionGroupController@trash
+  PUT             api/option_groups/{id}/restore ...................................................................................................................... API\OptionGroupController@restore
+  GET|HEAD        api/option_groups/{option_group} .................................................................................................. option_groups.show › API\OptionGroupController@show
+  PUT|PATCH       api/option_groups/{option_group} .............................................................................................. option_groups.update › API\OptionGroupController@update
+  DELETE          api/option_groups/{option_group} ............................................................................................ option_groups.destroy › API\OptionGroupController@destroy
+  GET|HEAD        api/options ................................................................................................................................ options.index › API\OptionController@index
+  POST            api/options ................................................................................................................................ options.store › API\OptionController@store
+  GET|HEAD        api/options/deleted ........................................................................................................................................ API\OptionController@trash
+  PUT             api/options/{id}/restore ................................................................................................................................. API\OptionController@restore
+  GET|HEAD        api/options/{option} ......................................................................................................................... options.show › API\OptionController@show
+  PUT|PATCH       api/options/{option} ..................................................................................................................... options.update › API\OptionController@update
+  DELETE          api/options/{option} ................................................................................................................... options.destroy › API\OptionController@destroy
+  ANY             api/order/{code}/payment/callback/moyaser ...................................................................................................... API\PaymentsController@moyaserCallback
+  GET|HEAD        api/orders ................................................................................................................................... orders.index › API\OrderController@index
+  POST            api/orders ................................................................................................................................... orders.store › API\OrderController@store
+  GET|HEAD        api/orders/{order} ............................................................................................................................. orders.show › API\OrderController@show
+  PUT|PATCH       api/orders/{order} ......................................................................................................................... orders.update › API\OrderController@update
+  POST            api/otp/send ................................................................................................................................................ API\OTPController@sendOTP
+  POST            api/otp/verify ............................................................................................................................................ API\OTPController@verifyOTP
+  GET|HEAD        api/payment_methods ................................................................................................................................. API\PaymentMethodController@index
+  GET|HEAD        api/payout ................................................................................................................................................. API\PayoutController@index
+  POST            api/payout ................................................................................................................................................. API\PayoutController@store
+  GET|HEAD        api/privacy_policy .................................................................................................................................................................... 
+  GET|HEAD        api/products ............................................................................................................................. products.index › API\ProductController@index
+  POST            api/products ............................................................................................................................. products.store › API\ProductController@store
+  POST            api/products/photos/order ........................................................................................................................... API\ProductController@orderPhotos
+  DELETE          api/products/photos/{imageId} ....................................................................................................................... API\ProductController@deletePhoto
+  POST            api/products/{id} ........................................................................................................................................ API\ProductController@update
+  POST            api/products/{id}/menus ................................................................................................................................... API\ProductController@menus
+  GET|HEAD        api/products/{id}/photos ................................................................................................................................. API\ProductController@photos
+  POST            api/products/{id}/photos ............................................................................................................................... API\ProductController@addPhoto
+  GET|HEAD        api/products/{product} ..................................................................................................................... products.show › API\ProductController@show
+  PUT|PATCH       api/products/{product} ................................................................................................................. products.update › API\ProductController@update
+  DELETE          api/products/{product} ............................................................................................................... products.destroy › API\ProductController@destroy
+  PUT             api/profile/password/update ......................................................................................................................... API\AuthController@changePassword
+  POST            api/register .............................................................................................................................................. API\AuthController@register
+  GET|HEAD        api/search/order_or_product ....................................................................................................................... API\SearchController@orderOrProduct
+  GET|HEAD        api/search/order_or_product/autocomplete .............................................................................................. API\SearchController@orderOrProductAutocomplete
+  GET|HEAD        api/search/vendor_or_product ..................................................................................................................... API\SearchController@vendorOrProduct
+  GET|HEAD        api/search/vendor_or_product/autocomplete ............................................................................................ API\SearchController@vendorOrProductAutocomplete
+  POST            api/send_notification ................................................................................................................................ API\NotificationController@store
+  POST            api/technical_support ............................................................................................................................ API\TechnicalSupportController@store
+  GET|HEAD        api/terms ............................................................................................................................................................................. 
+  GET|HEAD        api/test .............................................................................................................................................................................. 
+  GET|HEAD        api/user/location_details ............................................................................................................................................................. 
+  GET|HEAD        api/user_search .................................................................................................................................. API\SearchController@vendorOrProduct
+  GET|HEAD        api/vendors ................................................................................................................................ vendors.index › API\VendorController@index
+  POST            api/vendors ................................................................................................................................ vendors.store › API\VendorController@store
+  GET|HEAD        api/vendors/{id}/customers ............................................................................................................................. API\VendorController@customers
+  GET|HEAD        api/vendors/{id}/customers/{userId} ..................................................................................................................... API\VendorController@customer
+  GET|HEAD        api/vendors/{id}/menus ..................................................................................................................................... API\VendorController@menus
+  GET|HEAD        api/vendors/{id}/products ............................................................................................................................... API\VendorController@products
+  GET|HEAD        api/vendors/{id}/reviews ........................................................................................................................ API\ReviewController@getVendorReviews
+  GET|HEAD        api/vendors/{id}/sales ..................................................................................................................................... API\VendorController@sales
+  GET|HEAD        api/vendors/{id}/summery ................................................................................................................................. API\VendorController@summery
+  POST            api/vendors/{id}/update ................................................................................................................................... API\VendorController@update
+  GET|HEAD        api/vendors/{vendor} ......................................................................................................................... vendors.show › API\VendorController@show
+  PUT|PATCH       api/vendors/{vendor} ..................................................................................................................... vendors.update › API\VendorController@update
+  DELETE          api/vendors/{vendor} ................................................................................................................... vendors.destroy › API\VendorController@destroy
+  GET|HEAD        filament/assets/{file} ............................................................................................................... filament.asset › Filament\Http › AssetController
+  POST            filament/logout .................................................................................................................................................. filament.auth.logout
+  GET|HEAD        livewire/livewire.js ........................................................................................................... Livewire\Controllers › LivewireJavaScriptAssets@source
+  GET|HEAD        livewire/livewire.js.map ......................................................................................................... Livewire\Controllers › LivewireJavaScriptAssets@maps
+  POST            livewire/message/{name} ............................................................................................... livewire.message › Livewire\Controllers › HttpConnectionHandler
+  GET|HEAD        livewire/preview-file/{filename} ............................................................................. livewire.preview-file › Livewire\Controllers › FilePreviewHandler@handle
+  POST            livewire/upload-file ........................................................................................... livewire.upload-file › Livewire\Controllers › FileUploadHandler@handle
+  GET|HEAD        log-viewer ............................................................................................................................ blv.index › Opcodes\LogViewer › IndexController
+  GET|HEAD        log-viewer/file/{fileIdentifier}/download .............................................................................. blv.download-file › Opcodes\LogViewer › DownloadFileController
+  GET|HEAD        log-viewer/folder/{folderIdentifier}/download ...................................................................... blv.download-folder › Opcodes\LogViewer › DownloadFolderController
+  GET|HEAD        log-viewer/is-scan-required ....................................................................................... blv.is-scan-required › Opcodes\LogViewer › IsScanRequiredController
+  GET|HEAD        log-viewer/scan-files ........................................................................................................ blv.scan-files › Opcodes\LogViewer › ScanFilesController
+  GET|HEAD        log-viewer/search-progress ............................................................................................. blv.search-more › Opcodes\LogViewer › SearchProgressController
+  GET|HEAD        oauth/authorize .............................................................................. passport.authorizations.authorize › Laravel\Passport › AuthorizationController@authorize
+  POST            oauth/authorize ........................................................................... passport.authorizations.approve › Laravel\Passport › ApproveAuthorizationController@approve
+  DELETE          oauth/authorize .................................................................................... passport.authorizations.deny › Laravel\Passport › DenyAuthorizationController@deny
+  GET|HEAD        oauth/clients .................................................................................................... passport.clients.index › Laravel\Passport › ClientController@forUser
+  POST            oauth/clients ...................................................................................................... passport.clients.store › Laravel\Passport › ClientController@store
+  PUT             oauth/clients/{client_id} ........................................................................................ passport.clients.update › Laravel\Passport › ClientController@update
+  DELETE          oauth/clients/{client_id} ...................................................................................... passport.clients.destroy › Laravel\Passport › ClientController@destroy
+  GET|HEAD        oauth/personal-access-tokens ................................................................ passport.personal.tokens.index › Laravel\Passport › PersonalAccessTokenController@forUser
+  POST            oauth/personal-access-tokens .................................................................. passport.personal.tokens.store › Laravel\Passport › PersonalAccessTokenController@store
+  DELETE          oauth/personal-access-tokens/{token_id} ................................................... passport.personal.tokens.destroy › Laravel\Passport › PersonalAccessTokenController@destroy
+  GET|HEAD        oauth/scopes ........................................................................................................... passport.scopes.index › Laravel\Passport › ScopeController@all
+  POST            oauth/token ...................................................................................................... passport.token › Laravel\Passport › AccessTokenController@issueToken
+  POST            oauth/token/refresh ...................................................................................... passport.token.refresh › Laravel\Passport › TransientTokenController@refresh
+  GET|HEAD        oauth/tokens ....................................................................................... passport.tokens.index › Laravel\Passport › AuthorizedAccessTokenController@forUser
+  DELETE          oauth/tokens/{token_id} .......................................................................... passport.tokens.destroy › Laravel\Passport › AuthorizedAccessTokenController@destroy
+  GET|HEAD        sanctum/csrf-cookie ................................................................................................. sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show
+
+                                                                                                                                                                                     Showing [170] routes
+
