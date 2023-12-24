@@ -55,7 +55,7 @@ class CreatePermissionTables extends Migration
 
             $table->string('model_type');
             $table->unsignedBigInteger($columnNames['model_morph_key']);
-            $table->index([$columnNames['model_morph_key'], 'model_type'], 'model_has_permissions_model_id_model_type_index');
+            $table->index([$columnNames['model_morph_key'], 'model_type'], 'model_has_permissions_model_id_model_type_index_2');
 
             $table->foreign(PermissionRegistrar::$pivotPermission)
                 ->references('id') // permission id
@@ -79,7 +79,7 @@ class CreatePermissionTables extends Migration
 
             $table->string('model_type');
             $table->unsignedBigInteger($columnNames['model_morph_key']);
-            $table->index([$columnNames['model_morph_key'], 'model_type'], 'model_has_roles_model_id_model_type_index');
+            $table->index([$columnNames['model_morph_key'], 'model_type'], 'model_has_roles_model_id_model_type_index_2');
 
             $table->foreign(PermissionRegistrar::$pivotRole)
                 ->references('id') // role id

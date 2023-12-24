@@ -66,6 +66,25 @@ class AppUser extends Authenticatable implements HasMedia
         'balance',
     ];
 
+    /**
+     * Get the value indicating whether the IDs are incrementing.
+     *
+     * @return bool
+     */
+    public function getIncrementing()
+    {
+        return false;
+    }
+
+    /**
+     * Get the auto-incrementing key type.
+     *
+     * @return string
+     */
+    public function getKeyType()
+    {
+        return 'string';
+    }
 
     public function registerMediaCollections(): void
     {
@@ -242,5 +261,26 @@ class AppUser extends Authenticatable implements HasMedia
             get: fn ($value) => '',
             set: fn ($value) => $value,
         );
+    }
+
+    public function save(array $options = [])
+    {
+        return $this;
+        // You can add a condition to allow save in some cases
+        throw new \Exception('Editing users is currently disabled.');
+    }
+
+    public function update(array $attributes = [], array $options = [])
+    {
+        return $this;
+        // You can add a condition to allow update in some cases
+        throw new \Exception('Editing users is currently disabled.');
+    }
+
+    public function delete()
+    {
+        return $this;
+        // You can add a condition to allow delete in some cases
+        throw new \Exception('Editing users is currently disabled.');
     }
 }

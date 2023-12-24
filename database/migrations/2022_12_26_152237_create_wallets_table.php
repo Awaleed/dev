@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('wallets', function (Blueprint $table) {
             $table->id();
             $table->double('balance', 15, 2)->default(0.00);
-            $table->foreignId('user_id')->constrained('app_users');
+            $table->uuid('user_id');
             $table->timestamps();
             $table->softDeletes();
         });

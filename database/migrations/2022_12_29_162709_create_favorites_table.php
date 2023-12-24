@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('favorites', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('app_users');
+            $table->uuid('user_id');
             $table->bigInteger('model_id')->index();
             $table->string('model_name');
             $table->timestamps();

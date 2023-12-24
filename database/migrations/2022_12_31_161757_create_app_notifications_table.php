@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('app_notifications', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('app_users');
+            $table->uuid('user_id');
             $table->string('title_ar');
             $table->string('title_en');
             $table->string('url')->nullable();

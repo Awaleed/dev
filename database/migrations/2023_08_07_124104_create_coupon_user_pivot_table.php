@@ -17,8 +17,8 @@ class CreateCouponUserPivotTable extends Migration
             $table->id();
             $table->unsignedBigInteger('coupon_id');
             $table->foreign('coupon_id')->references('id')->on('coupons')->onDelete('cascade');
-            $table->unsignedBigInteger('app_user_id');
-            $table->foreign('app_user_id')->references('id')->on('app_users')->onDelete('cascade');
+            $table->uuid('app_user_id');
+            // $table->foreign('app_user_id')->references('id')->on('app_users')->onDelete('cascade');
             $table->unsignedBigInteger('order_id')->nullable();
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
         });

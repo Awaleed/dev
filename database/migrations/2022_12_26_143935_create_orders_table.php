@@ -51,8 +51,8 @@ return new class extends Migration
 
             $table->foreignId('payment_method_id')->constrained();
             $table->foreignId('vendor_id')->constrained();
-            $table->foreignId('user_id')->constrained('app_users');
-            $table->foreignId('driver_id')->nullable()->constrained('app_users');
+            $table->uuid('user_id');
+            $table->uuid('driver_id')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

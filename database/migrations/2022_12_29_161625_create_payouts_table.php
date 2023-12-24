@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->double('amount', 10, 2);
             $table->foreignId('earning_id')->constrained();
-            $table->foreignId('user_id')->references('id')->on('app_users');
+            $table->uuid('user_id');
             $table->foreignId('payout_method_id')->nullable()->constrained();
             $table->text('note')->nullable();
 

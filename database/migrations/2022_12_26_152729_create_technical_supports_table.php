@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('type'); //, ['error', 'complain']
             $table->text('title');
             $table->text('body');
-            $table->foreignId('user_id')->constrained()->references('id')->on('app_users');
+            $table->uuid('user_id');
 
             $table->foreignId('admin_id')->nullable()->constrained()->references('id')->on('users');
             $table->string('status')->nullable();
